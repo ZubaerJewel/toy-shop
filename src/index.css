@@ -1,0 +1,36 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.primary-btn {
+  @apply btn bg-purple-300 outline-none border-none text-black hover:bg-purple-400 font-bold;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: rgba(128, 0, 128, 0.678);
+  @apply md:block hidden;
+}
+
+.motion {
+  transition: all 1.2s;
+}
+
+.overlay-img {
+  @apply w-full h-full flex flex-col space-y-10 justify-center items-center opacity-0 hover:opacity-100 hover:bg-[#cc06d680] transition-all;
+  transition: all 1.2s;
+}
+
+.primary-title {
+  @apply text-4xl text-center font-bold text-purple-500 space-y-10;
+}
+
+.tab-btn {
+  @apply bg-purple-400 rounded-xl btn-xs md:btn-md btn hover:bg-purple-500 text-black font-bold md:gap-2 outline-none border-none;
+}
+
+.title-stat {
+  @apply stat-title text-gray-900 font-bold;
+}
