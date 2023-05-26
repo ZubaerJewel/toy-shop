@@ -9,7 +9,7 @@ const AllToys = () => {
 
   useEffect(() => {
     fetch(
-      `http://localhost:5000/toys?startAt=${showMore}&limit=${20}`
+      `https://education-toy-server.vercel.app/toys?startAt=${showMore}&limit=${20}`
     )
       .then((res) => res.json())
       .then((data) => setToys(data))
@@ -17,7 +17,7 @@ const AllToys = () => {
   }, [showMore]);
 
   const handleSearch = (text) => {
-    fetch(`http://localhost:5000/toys/name?toyName=${text}`)
+    fetch(`https://education-toy-server.vercel.app/toys/name?toyName=${text}`)
       .then((res) => res.json())
       .then((data) => setToys(data))
       .catch((error) => console.log(error));

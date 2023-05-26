@@ -9,7 +9,7 @@ const Gallery = () => {
   const [toys, setToys] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/toys/limit/4")
+    fetch("https://education-toy-server.vercel.app/toys/limit/4")
       .then((res) => res.json())
       .then((data) => setToys(data))
       .catch((error) => console.log(error));

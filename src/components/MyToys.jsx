@@ -19,7 +19,7 @@ const MyToys = () => {
 
   useEffect(() => {
     fetch(
-      `http://localhost:5000/toys/${user?.email}?num=${sort}`
+      `https://education-toy-server.vercel.app/toys/${user?.email}?num=${sort}`
     )
       .then((res) => res.json())
       .then((data) => setToys(data))

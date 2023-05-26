@@ -37,7 +37,7 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `http://localhost:5000/toys/toy/${params.id}`
+            `https://education-toy-server.vercel.app/toys/toy/${params.id}`
           ),
       },
       {
@@ -49,7 +49,7 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `http://localhost:5000/toys/toy/${params.id}`
+            `https://education-toy-server.vercel.app/toys/toy/${params.id}`
           ),
       },
       {

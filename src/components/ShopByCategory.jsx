@@ -9,7 +9,7 @@ const ShopByCategory = () => {
   const [category, setCategory] = useState("Math");
 
   useEffect(() => {
-    fetch(`http://localhost:5000/toys/category/${category}`)
+    fetch(`https://education-toy-server.vercel.app/toys/category/${category}`)
       .then((res) => res.json())
       .then((data) => setToys(data))
       .catch((error) => console.log(error));

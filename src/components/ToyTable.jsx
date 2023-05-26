@@ -20,7 +20,7 @@ const ToyTable = ({ toy, editable, isDelete, setIsDelete }) => {
       confirmButtonText: "Yes !",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/toys/toy/${id}`, {
+        fetch(`https://education-toy-server.vercel.app/toys/toy/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
