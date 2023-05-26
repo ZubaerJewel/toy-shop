@@ -15,7 +15,7 @@ const Footer = () => {
         <div>
           <img src="/logo.png" className="w-20 rounded-full" alt="logo" />
           <p className="font-semibold">
-            Toys Zone Ltd.
+            Educational Toys Ltd.
             <br />
             We provide our best service with a best promise.
           </p>
