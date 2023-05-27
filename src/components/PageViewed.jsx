@@ -4,9 +4,9 @@ import React from "react";
 
 const PageViewed = () => {
   return (
-    <div className="md:stats mb-20 w-full md:h-60 px-6 md:px-10">
-      <div className="stat bg-[#cc06d680] md:rounded-s-md">
-        <div className="stat-figure text-primary">
+    <div className="md:stats mb-20  w-full  bg-[#cc06d680]   md:h-60  md:px-10">
+      <div className="stat   md:rounded-s-md">
+        <div className="stat-figure text-primary  ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -26,7 +26,7 @@ const PageViewed = () => {
         <div className="stat-desc title-stat">21% more than last month</div>
       </div>
 
-      <div className="stat bg-[#8306d65b]">
+      <div className="stat bg-[#a44fdc5b]">
         <div className="stat-figure text-secondary">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -42,12 +42,12 @@ const PageViewed = () => {
             ></path>
           </svg>
         </div>
-        <div className="title-stat">Visited by</div>
+        <div className="title-stat">Viewed by</div>
         <div className="stat-value text-secondary">2.6M</div>
-        <div className="stat-desc title-stat">21% more than last month</div>
+        <div className="stat-desc title-stat">20% more than last month</div>
       </div>
 
-      <div className="stat bg-[#cc06d680] md:rounded-e-md">
+      <div className="stat md:rounded-e-md">
         <div className="stat-figure text-primary">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -63,9 +63,9 @@ const PageViewed = () => {
             ></path>
           </svg>
         </div>
-        <div className="title-stat">New Registers</div>
-        <div className="stat-value text-primary">1,200</div>
-        <div className="stat-desc title-stat">↘︎ 90 (14%)</div>
+        <div className="title-stat">New Members</div>
+        <div className="stat-value text-primary">200</div>
+        <div className="stat-desc title-stat">↘︎ 12% more than last month</div>
       </div>
     </div>
   );

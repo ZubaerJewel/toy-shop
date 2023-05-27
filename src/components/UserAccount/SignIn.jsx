@@ -92,7 +92,7 @@ const SignIn = () => {
                 </div>
                 <SocialSignIn />
                 <p className="mt-2 text-xl font-semibold">
-                  New To Toys-zone !{" "}
+                  New To Educational Toys !{" "}
                   <Link
                     onClick={() => setNavigate(from)}
                     to="/signup"

@@ -46,11 +46,11 @@ const Gallery = () => {
               <div className="w-full mask mask-hexagon  motion">
                 <img src={toy.toyImage} />
                 <div className="absolute top-0 overlay-img">
-                  <p className="text-black text-3xl text-center font-bold">
+                  <p className="text-purple-700 text-3xl text-center font-bold">
                     {toy.toyName}
                   </p>
-                  <button className="primary-btn gap-4">
-                    Shop Now <HiShoppingCart className="text-2xl" />
+                  <button className="btn  gap-4 bg-purple-900 ">
+                    Shop Now <HiShoppingCart className="text-2xl " />
                   </button>
                 </div>
               </div>
