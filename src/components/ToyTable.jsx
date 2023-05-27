@@ -58,10 +58,10 @@ const ToyTable = ({ toy, editable, isDelete, setIsDelete }) => {
   } = toy;
   return (
     <>
-      <tr>
+      <tr className="bg-purple-400">
         <th>{toyName}</th>
         <td>
-          <div className="flex items-center space-x-3">
+          <div className="flex bg-purple-400 items-center space-x-3">
             <div className="avatar">
               <div className="mask mask-squircle w-12 h-12">
                 <img src={toyImage} />
@@ -73,12 +73,12 @@ const ToyTable = ({ toy, editable, isDelete, setIsDelete }) => {
             </div>
           </div>
         </td>
-        <td>{subCategory}</td>
-        <td>${price}</td>
-        <td>{quantity}</td>
+        <td className="bg-purple-400">{subCategory}</td>
+        <td className="bg-purple-400">${price}</td>
+        <td className="bg-purple-400">{quantity}</td>
         <th>
           {editable ? (
-            <div className="flex gap-2">
+            <div className="flex gap-2 ">
               <Link to={`/toys/update/${_id}`}>
                 <button className="btn-xs btn bg-transparent hover:bg-transparent border-none text-purple-600">
                   {/* <FaPen /> */}

@@ -13,6 +13,7 @@ const ActiveLink = ({ children, to }) => {
           : isActive
           ? "bg-purple-600 text-white px-3 py-2 rounded-md"
           : ""
+        
       }
     >
       {children}

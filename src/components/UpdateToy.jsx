@@ -112,6 +112,7 @@ const UpdateToy = () => {
           </div>
           <button type="submit" className="primary-btn w-full">
             Update
+            {/* update submit button */}
           </button>
         </form>
       </div>
