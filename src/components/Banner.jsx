@@ -31,7 +31,7 @@ const Banner = () => {
       >
         {bannerImg.map((img, idx) => (
           <SwiperSlide key={idx}>
-            <div className="md:h-[calc(100vh-100px)] w-full block md:flex bg-[rgba(223,37,236,0.17)] ">
+            <div className="md:h-[calc(100vh-100px)] w-full block md:flex bg-[rgba(94,243,109,0.17)] ">
               <div className="w-full">
                 <img
                   src={img}
@@ -39,16 +39,16 @@ const Banner = () => {
                   className="h-96 md:h-full md:w-3/5 bg-cover"
                 />
               </div>
-              <div className=" w-full h-full flex justify-center items-cent text-white text-center">
-                <div className="p-10 text-black space-y-16">
-                  <h2 className="text-5xl font-bold bg-purple-300 p-4 rounded-md">
+              <div className=" w-full h-full flex justify-center bg-purple-500 items-cent text-white text-center">
+                <div className="p-10 space-y-16 mt-28">
+                  <h2 className="text-4xl font-bold   text-p-4 ounded-md">
                     Welcome to Educational-Toys
                   </h2>
                   <p className="font-semibold space-y-6">
                     We provide our best service for your kid. Buy your toys and
-                    your discount here.
+                    your discount here.We provide our best service with a best promise.
                   </p>
-                  <button className="primary-btn gap-4">
+                  <button className="btn bg-cyan-600 gap-4 ">
                      Buy Now <HiShoppingCart className="text-2xl" />
                   </button>
                 </div>

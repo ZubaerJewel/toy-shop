@@ -92,13 +92,13 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-full bg-[rgba(238,238,110,0.09)] md:px-10">
+      <nav className="w-full bg-cyan-600 md:px-10">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <div className="flex items-center">
                 <img src="/logo.png" className="w-16  rounded-full bg-cover" />
-                <p className=" md:block text-2xl text-purple-700 font-bold">
+                <p className=" md:block text-2xl text-purple-600 font-bold">
                 Educational Toys
                 </p>
               </div>
@@ -123,7 +123,7 @@ const Navbar = () => {
                 navbar ? "block" : "hidden"
               }`}
             >
-              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-black font-semibold">
+              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-white font-semibold">
                 <li>
                   <ActiveLink to="/">Home</ActiveLink>
                 </li>

@@ -13,7 +13,7 @@ import {
 const Footer = () => {
   return (
     <>
-      <footer className="footer p-10 bg-purple-200">
+      <footer className="footer p-10 bg-black text-white">
         <div>
           <img src="/logo.png" className="w-20 rounded-full" alt="logo" />
           <p className="font-semibold">
