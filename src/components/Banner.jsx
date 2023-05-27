@@ -1,5 +1,5 @@
 /** @format */
-
+import {Link} from "react-router-dom";
 import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -13,7 +13,7 @@ const Banner = () => {
     "https://thumbs.dreamstime.com/b/alarm-clock-puzzles-dominoes-paints-glasses-educational-toys-purple-background-top-view-back-to-school-concept-early-215808874.jpg",
     "https://5.imimg.com/data5/SELLER/Default/2023/2/SI/BI/VW/157562239/toys-encourage-kids-recognize-letters-numbers-3256226-hmf-v1-5ece9b3064524d17a34bb121ef79e650-500x500.jpg",
     "https://thumbs.dreamstime.com/b/alarm-clock-puzzles-dominoes-paints-glasses-educational-toys-purple-background-top-view-back-to-school-concept-early-215808874.jpg",
-    "",
+ 
     "https://thumbs.dreamstime.com/b/kids-toys-frame-purple-background-flat-lay-top-view-empty-center-140850170.jpg"
   ];
 
@@ -52,9 +52,15 @@ const Banner = () => {
                     We provide our best service for your kid. Buy your toys and
                     your discount here.We provide our best service with a best promise.
                   </p>
+
+                 <div>
+                  <Link to="/alltoys">
                   <button className="btn bg-purple-900 gap-4 ">
                      Buy Now <HiShoppingCart className="text-2xl" />
                   </button>
+                  </Link>
+                 </div>
+                  
                 </div>
               </div>
             </div>

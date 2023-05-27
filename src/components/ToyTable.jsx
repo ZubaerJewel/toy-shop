@@ -59,7 +59,7 @@ const ToyTable = ({ toy, editable, isDelete, setIsDelete }) => {
   return (
     <>
       <tr className="bg-purple-400">
-        <th>{toyName}</th>
+        <th className="bg-purple-400">{toyName}</th>
         <td>
           <div className="flex bg-purple-400 items-center space-x-3">
             <div className="avatar">
