@@ -81,14 +81,15 @@ const ToyTable = ({ toy, editable, isDelete, setIsDelete }) => {
             <div className="flex gap-2">
               <Link to={`/toys/update/${_id}`}>
                 <button className="btn-xs btn bg-transparent hover:bg-transparent border-none text-purple-600">
-                  <FaPen />
+                  {/* <FaPen /> */}
+                  Update
                 </button>
               </Link>
               <button
                 onClick={() => handleDelete(_id)}
                 className="btn-xs btn bg-transparent hover:bg-transparent border-none text-error"
               >
-                <FaTrash />
+                Delete
               </button>
             </div>
           ) : (
