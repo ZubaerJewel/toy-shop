@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="min-h-[calc(100vh-360px)]">
+      <div className="min-h-[calc(100vh-360px)] bg-purple-400  ">
         <Outlet />
       </div>
       <Footer />

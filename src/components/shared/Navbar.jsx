@@ -32,7 +32,7 @@ const Navbar = () => {
   const SignInBtn = () => {
     return (
       <Link to="/signin">
-        <button className="">Log in</button>
+        <button className="text-purple-300">Log in</button>
       </Link>
     );
   };
@@ -40,7 +40,7 @@ const Navbar = () => {
   //sign Out button
   const SignOutBtn = () => {
     return (
-      <button onClick={handleLogOut} className="">
+      <button onClick={handleLogOut} className="text-purple-300">
         Log out
       </button>
     );
@@ -92,7 +92,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-full bg-cyan-600 md:px-10">
+      <nav className="w-full bg-purple-900 md:px-10">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -123,7 +123,7 @@ const Navbar = () => {
                 navbar ? "block" : "hidden"
               }`}
             >
-              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-white font-semibold">
+              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-purple-300 font-semibold">
                 <li>
                   <ActiveLink to="/">Home</ActiveLink>
                 </li>

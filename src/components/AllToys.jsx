@@ -25,7 +25,7 @@ const AllToys = () => {
 
   return (
     <>
-      <div className="flex justify-center my-4">
+      <div className="flex  bg-purple-900 justify-center my-4">
         <div className="form-control w-1/2">
           <div className="input-group">
             <input
@@ -53,7 +53,7 @@ const AllToys = () => {
           </div>
         </div>
       </div>
-      <div className="overflow-x-auto w-full my-10">
+      <div className="overflow-x-auto bg-purple-900 w-full my-10">
         <table className="table w-full">
           {/* head */}
           <thead>
@@ -72,11 +72,11 @@ const AllToys = () => {
         </table>
       </div>
       {toys.length == 0 && (
-        <p className="text-center text-4xl text-red-700 font-bold">
+        <p className="text-center text-4xl  text-red-700 font-bold">
           No toys found !
         </p>
       )}
-      <div className="flex justify-center my-4">
+      <div className="flex justify-center my-4 bg-purple-900">
         {toys?.length > 20 && (
           <button
             onClick={() => setShowMore(showMore + 1)}
