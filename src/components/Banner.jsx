@@ -42,14 +42,14 @@ const Banner = () => {
               <div className=" w-full h-full flex justify-center items-cent text-white text-center">
                 <div className="p-10 text-black space-y-16">
                   <h2 className="text-5xl font-bold bg-purple-300 p-4 rounded-md">
-                    Welcome to Toys-Zone
+                    Welcome to Educational-Toys
                   </h2>
                   <p className="font-semibold space-y-6">
                     We provide our best service for your kid. Buy your toys and
                     your discount here.
                   </p>
                   <button className="primary-btn gap-4">
-                    Shop now <HiShoppingCart className="text-2xl" />
+                     Buy Now <HiShoppingCart className="text-2xl" />
                   </button>
                 </div>
               </div>
