@@ -32,7 +32,7 @@ const Navbar = () => {
   const SignInBtn = () => {
     return (
       <Link to="/signin">
-        <button className="primary-btn">Sign in</button>
+        <button className="">Log in</button>
       </Link>
     );
   };
@@ -40,8 +40,8 @@ const Navbar = () => {
   //sign Out button
   const SignOutBtn = () => {
     return (
-      <button onClick={handleLogOut} className="primary-btn">
-        Sign out
+      <button onClick={handleLogOut} className="">
+        Log out
       </button>
     );
   };
@@ -70,21 +70,21 @@ const Navbar = () => {
   //update title
   useEffect(() => {
     const pathname = location.pathname;
-    let title = "Toys Zone";
+    let title = "Educational Toys";
 
     // Update the title based on the current pathname
     if (pathname === "/") {
-      title = "Toys Zone Home";
+      title = "Educational Toys Home";
     } else if (pathname === "/alltoys") {
-      title = "Toys Zone all-toys";
+      title = "Educational Toys all-toys";
     } else if (pathname === "/mytoys") {
-      title = "Toys Zone my-toys";
+      title = "Educational Toys my-toys";
     } else if (pathname === "/addtoys") {
-      title = "Toys Zone add-toys";
+      title = "Educational Toys add-toys";
     } else if (pathname === "/blog") {
-      title = "Toys Zone blog";
+      title = "Educational Toys blog";
     } else if (pathname.includes("/toys/")) {
-      title = "Toys Zone toy details";
+      title = "Educational Toys toy details";
     }
 
     document.title = title;
@@ -92,14 +92,14 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-full bg-[rgba(234,63,239,0.09)] md:px-10">
+      <nav className="w-full bg-[rgba(238,238,110,0.09)] md:px-10">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <div className="flex items-center">
                 <img src="/logo.png" className="w-16  rounded-full bg-cover" />
                 <p className=" md:block text-2xl text-purple-700 font-bold">
-                  Toys-Zone
+                Educational Toys
                 </p>
               </div>
               {user && (

@@ -1,15 +1,18 @@
 {
-  "name": "toys-zone-client",
+  "name": "educational-toys",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-        "dev": "vite",
-        "build": "vite build",
+    "dev": "vite",
+    "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "aos": "^2.3.4",
     "daisyui": "^2.51.6",
     "firebase": "^9.22.0",

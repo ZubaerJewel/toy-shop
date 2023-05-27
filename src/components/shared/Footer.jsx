@@ -1,4 +1,6 @@
 /** @format */
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookSquare,faYoutube,faTwitterSquare,faInstagramSquare } from '@fortawesome/free-brands-svg-icons';
 
 import React from "react";
 import {
@@ -21,10 +23,24 @@ const Footer = () => {
           </p>
           <p>&copy; 2023 All Right Reserved </p>
           <div className="flex gap-4 text-2xl my-4 text-purple-900">
-            <FaFacebookSquare className="cursor-pointer" />
+
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+         <FontAwesomeIcon icon={faFacebookSquare} />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+  <FontAwesomeIcon icon={faInstagramSquare} className="cursor-pointer" />
+</a>
+<a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+  <FontAwesomeIcon icon={faYoutube} className="cursor-pointer" />
+</a>
+<a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+  <FontAwesomeIcon icon={faTwitterSquare} className="cursor-pointer" />
+</a>
+
+            {/* <FaFacebookSquare className="cursor-pointer" />
             <FaTwitterSquare className="cursor-pointer" />
             <FaInstagramSquare className="cursor-pointer" />
-            <FaYoutube className="cursor-pointer" />
+            <FaYoutube className="cursor-pointer" /> */}
           </div>
         </div>
         <div>
