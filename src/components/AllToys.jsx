@@ -2,19 +2,45 @@
 
 import React, { useEffect, useState } from "react";
 import ToyTable from "./ToyTable";
+import PageNotFound from "./PageNotFound";
+import { useNavigate } from 'react-router-dom';
 
 const AllToys = () => {
+  const navigate = useNavigate();
+
+  const [eror, setEror] = useState(false);
   const [toys, setToys] = useState([]);
   const [showMore, setShowMore] = useState(0);
 
   useEffect(() => {
-    fetch(
-      `https://education-toy-server.vercel.app/toys?startAt=${showMore}&limit=${20}`
-    )
-      .then((res) => res.json())
-      .then((data) => setToys(data))
-      .catch((error) => console.log(error));
+    // fetch(
+    //   `https://education-toy-server.vercel.app/toys?startAt=${showMore}&limit=${20}`
+    // )
+    //   .then((res) => res.json())
+    //   .then((data) => setToys(data))
+    //   .catch((error) => console.log(error));
+    const fetchData = async () => {
+      try {
+        // Simulating data fetching
+        const response = await fetch(`https://education-toy-server.vercel.app/toys?startAt=${showMore}&limit=${20}`);
+        if (!response.ok) {
+          throw new Error('Data fetch failed');
+        }
+        const data = await response.json();
+        setToys(data);
+      } catch (error) { console.log(error);
+        setEror(true);
+      }
+    };
+
+    fetchData();
+
   }, [showMore]);
+
+  if(eror)
+  {
+    navigate('*');
+  }
 
   const handleSearch = (text) => {
     fetch(`https://education-toy-server.vercel.app/toys/name?toyName=${text}`)
@@ -25,6 +51,7 @@ const AllToys = () => {
 
   return (
     <>
+      {toys? ( <>
       <div className="flex  bg-purple-900 justify-center my-4">
         <div className="form-control w-1/2">
           <div className="input-group">
@@ -71,11 +98,11 @@ const AllToys = () => {
           </tbody>
         </table>
       </div>
-      {toys.length == 0 && (
+      {/* {toys.length == 0 && (
         <p className="text-center text-4xl  text-red-700 font-bold">
           No toys found !
         </p>
-      )}
+      )} */}
       <div className="flex justify-center my-4 bg-purple-900">
         {toys?.length > 20 && (
           <button
@@ -86,6 +113,13 @@ const AllToys = () => {
           </button>
         )}
       </div>
+
+      </>)
+
+      :(
+        // Render loading state or fallback UI
+        <div>Loading...</div>
+      )}
     </>
   );
 };
