@@ -67,15 +67,14 @@ const Blog = () => {
           What is express js? What is Nest JS?
         </h2>
         <p className="p-4">
-          <span className="text-primary font-bold">Express.js : </span>
+          <span className="text-primary font-bold">ExpressJS : </span>
           Minimalistic and flexible web application framework for Node.js.
-          Handles HTTP requests, defines routes, and manages middleware.
-          Lightweight, unopinionated, and easy to use. Extensive ecosystem of
+          Handles HTTP requests, defines routes, and manages middleware and easy to use. Extensive ecosystem of
           middleware and plugins. Popular choice for building web applications
           and APIs in Node.js.
         </p>
         <p className="p-4">
-          <span className="text-primary font-bold">Nest.js : </span>A Use
+          <span className="text-primary font-bold">NestJS : </span>A Use
           Progressive Node.js framework for scalable server-side applications.
           Built on top of Express.js, leveraging its features. Focuses on
           modularity, reusability, and testability. Utilizes TypeScript and
