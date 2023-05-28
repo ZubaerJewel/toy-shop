@@ -4,13 +4,13 @@ import React from "react";
 
 const Blog = () => {
   return (
-    <div className="my-10 md:mx-10 mx-6 space-y-5 text-black">
+    <div className="my-10 md:mx-10 mx-6 space-y-5 text-purple-600">
       <div className="p-4 rounded-md shadow-2xl border-purple-500 border bg-purple-300 shadow-purple-600">
-        <h2 className="text-2xl text-center font-bold">
+        <h2 className="text-2xl  font-bold">
           What is an access token and refresh token?
         </h2>
         <p className="p-4">
-          <span className="text-primary font-bold">Access Token : </span>
+          <span className="text-primary font-bold">Access Token : </span><br></br>
           Access Token: An access token is a credential that is used to
           authenticate and authorize a user or application when making API
           requests. It is typically short-lived and has an expiration time,
@@ -23,7 +23,7 @@ const Blog = () => {
           permissions to access the requested resource.
         </p>
         <p className="p-4">
-          <span className="text-primary font-bold">Refresh Token : </span>A
+          <span className="text-primary font-bold">Refresh Token : </span><br></br>A
           refresh token is a long-lived credential that is used to obtain a new
           access token. Unlike access tokens, refresh tokens have a longer
           expiration time and can be revoked by the server. When an access token
@@ -35,11 +35,11 @@ const Blog = () => {
         </p>
       </div>
       <div className="p-4 rounded-md shadow-2xl border-purple-500 border bg-purple-300 shadow-purple-600">
-        <h2 className="text-2xl text-center font-bold">
+        <h2 className="text-2xl font-bold">
           Compare SQL and NoSQL databases?
         </h2>
         <p className="p-4">
-          <span className="text-primary font-bold">SQL Database : </span>
+          <span className="text-primary font-bold">SQL Database : </span><br></br>
           Use structured data models and enforce a predefined schema. Data is
           organized into tables with rows and columns, allowing for
           relationships between tables through keys. Follow the ACID (Atomicity,
@@ -51,7 +51,7 @@ const Blog = () => {
           MySQL, PostgreSQL, Oracle, SQL Server.
         </p>
         <p className="p-4">
-          <span className="text-primary font-bold">NoSQL Database : </span>A Use
+          <span className="text-primary font-bold">NoSQL Database : </span><br></br>A Use
           flexible, schema-less data models that can accommodate unstructured,
           semi-structured, or changing data formats. Data is stored in various
           formats like key-value pairs, documents, column families, or graphs.
@@ -63,18 +63,18 @@ const Blog = () => {
         </p>
       </div>
       <div className="p-4 rounded-md shadow-2xl border-purple-500 border bg-purple-300 shadow-purple-600">
-        <h2 className="text-2xl text-center font-bold">
+        <h2 className="text-2xl font-bold">
           What is express js? What is Nest JS?
         </h2>
         <p className="p-4">
-          <span className="text-primary font-bold">ExpressJS : </span>
+          <span className="text-primary font-bold">ExpressJS : </span><br></br>
           Minimalistic and flexible web application framework for Node.js.
           Handles HTTP requests, defines routes, and manages middleware and easy to use. Extensive ecosystem of
           middleware and plugins. Popular choice for building web applications
           and APIs in Node.js.
         </p>
         <p className="p-4">
-          <span className="text-primary font-bold">NestJS : </span>A Use
+          <span className="text-primary font-bold">NestJS : </span><br></br>A Use
           Progressive Node.js framework for scalable server-side applications.
           Built on top of Express.js, leveraging its features. Focuses on
           modularity, reusability, and testability. Utilizes TypeScript and
@@ -84,11 +84,11 @@ const Blog = () => {
         </p>
       </div>
       <div className="p-4 rounded-md shadow-2xl border-purple-500 border bg-purple-300 shadow-purple-600">
-        <h2 className="text-2xl text-center font-bold">
+        <h2 className="text-2xl  font-bold">
           What is MongoDB aggregate and how does it work?
         </h2>
         <p className="p-4">
-          <span className="text-primary font-bold">MongoDB aggregate : </span>
+          <span className="text-primary font-bold">MongoDB aggregate : </span><br></br>
           In MongoDB, the aggregate function performs advanced data aggregation
           operations on collections. It takes an array of stages as input, where
           each stage represents an operation to be applied to the data. The
