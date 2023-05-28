@@ -13,7 +13,7 @@ import {
 const Footer = () => {
   return (
     <>
-      <footer className="footer p-10 bg-black text-white">
+      <footer className="footer p-10 bg-black text-purple-500">
         <div>
           <img src="/logo.png" className="w-20 rounded-full" alt="logo" />
           <p className="font-semibold">
@@ -47,7 +47,7 @@ const Footer = () => {
           <span className="footer-title">Our Company</span>
           <a className="link link-hover">About Us </a>
           <a className="link link-hover">FAQs</a>
-          <a className="link link-hover">Contact Us</a>
+          <a className="link link-hover"></a>
           <a className="link link-hover">New Products</a>
           <a className="link link-hover">Best Sales</a>
         </div>
@@ -63,6 +63,14 @@ const Footer = () => {
           <a className="link link-hover">Terms of use</a>
           <a className="link link-hover">Privacy policy</a>
           <a className="link link-hover">Cookie policy</a>
+        </div>
+        <div>
+        <span className="footer-title">Contact Us</span>
+          <a className="">01839666712 </a>
+          <a className="">01303407372</a>
+          <a className="">zubaer5jewel.16@gmail.com</a>
+          <a className="">jewel5zubaer.16@gmail.com</a>
+          <a className="">Address: H/N-82,7470-Roypur,Bagherpara,Jashore</a>
         </div>
       </footer>
     </>

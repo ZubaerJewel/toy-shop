@@ -11,10 +11,12 @@ const Main = () => {
   return (
     <>
       <Banner />
-      <Gallery />
       <ShopByCategory />
-      <PageViewed />
+      <Gallery />
+     
+    
       <SubscribeNews />
+      <PageViewed />
     </>
   );
 };

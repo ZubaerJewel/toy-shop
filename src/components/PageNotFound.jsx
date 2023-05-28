@@ -8,9 +8,9 @@ const PageNotFound = () => {
   return (
     <div className="h-screen w-screen bg-[url('/error.jpg')] bg-cover bg-center flex justify-center items-center">
       <Link to="/">
-        <button className="btn gap-8 bg-red-600 mt-32 px-10 hover:bg-purple-800">
+        <button className="btn  bg-red-400 px-10 hover:bg-purple-700">
           <HiHome className="text-2xl" />
-          Back to home
+          Back To Home
         </button>
       </Link>
     </div>

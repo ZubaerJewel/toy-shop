@@ -74,18 +74,23 @@ const Navbar = () => {
 
     // Update the title based on the current pathname
     if (pathname === "/") {
-      title = "Educational Toys Home";
+      title = "Educational Toys | Home";
     } else if (pathname === "/alltoys") {
-      title = "Educational Toys all-toys";
+      title = "Educational Toys | all-toys";
     } else if (pathname === "/mytoys") {
-      title = "Educational Toys my-toys";
+      title = "Educational Toys | my-toys";
     } else if (pathname === "/addtoys") {
-      title = "Educational Toys add-toys";
+      title = "Educational Toys | add-toys";
     } else if (pathname === "/blog") {
-      title = "Educational Toys blog";
+      title = "Educational Toys | blog";
     } else if (pathname.includes("/toys/")) {
-      title = "Educational Toys toy details";
+      title = "Educational Toys | toy details";
     }
+    else if (pathname === "/signin") {
+      title = "Educational Toys | login";}
+   else if (pathname.includes("/signup")) {
+        title = "Educational Toys | signup";
+      }
 
     document.title = title;
   }, [location]);
@@ -99,7 +104,7 @@ const Navbar = () => {
               <div className="flex items-center">
                 <img src="/logo.png" className="w-16  rounded-full bg-cover" />
                 <p className=" md:block text-2xl text-purple-600 font-bold">
-                Educational Toys
+                {document.title}
                 </p>
               </div>
               {user && (
