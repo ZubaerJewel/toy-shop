@@ -1,5 +1,5 @@
 /** @format */
-
+import Modal from 'react-modal';
 import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import {
@@ -11,6 +11,11 @@ import {
 import Swal from "sweetalert2";
 
 const ToyDetails = () => {
+  const [isOpen, setIsOpen] = useState(true);
+  const closeModal = () => {
+    setIsOpen(false);
+
+  };
   const [disabled, setDisabled] = useState(false);
   const toy = useLoaderData();
   const {
@@ -38,7 +43,14 @@ const ToyDetails = () => {
   };
   // console.log(toy);
   return (
-    <div className="card w-96 mx-auto my-10 shadow-2xl shadow-purple-600">
+     <Modal
+         isOpen={isOpen}
+         onRequestClose={closeModal}
+         contentLabel="Modal">
+  <div className='bg-purple-400'>
+
+  <button onClick={closeModal} className='text-purple-300 btn bg-red-600'>CLOSE</button>
+<div className="card w-96 mx-auto my-10 shadow-2xl shadow-purple-600">
       <figure className="h-64">
         <img src={toyImage} />
       </figure>
@@ -80,6 +92,11 @@ const ToyDetails = () => {
         Add To Cart <FaShoppingCart />
       </button>
     </div>
+    <button onClick={closeModal} className='text-purple-300 btn bg-red-600'>CLOSE</button>
+  </div>
+ 
+</Modal>
+   
   );
 };
 
