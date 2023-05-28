@@ -53,7 +53,7 @@ const Navbar = () => {
         title={user?.displayName || "Name not added"}
         className="avatar placeholder"
       >
-        <div className="w-16 mask mask-hexagon">
+        <div className="w-16 mask mask-circle">
           {user?.photoURL ? (
             <img src={user?.photoURL} />
           ) : (
@@ -114,7 +114,7 @@ const Navbar = () => {
               )}
               <div className="md:hidden">
                 <button
-                  className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                  className="p-2  text-purple-100 rounded-md outline-none focus:border-purple-100 focus:border"
                   onClick={() => setNavbar(!navbar)}
                 >
                   {navbar ? <RxCross1 /> : <RxHamburgerMenu />}

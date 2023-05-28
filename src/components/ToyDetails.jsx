@@ -47,9 +47,9 @@ const ToyDetails = () => {
          isOpen={isOpen}
          onRequestClose={closeModal}
          contentLabel="Modal">
-  <div className='bg-purple-400'>
+  <div className='bg-purple-400  md:w-full h-full'>
 
-  <button onClick={closeModal} className='text-purple-300 btn bg-red-600'>CLOSE</button>
+  <button onClick={closeModal} className='text-purple-300 btn bg-red-600  text-3xl'>CLOSE</button>
 <div className="card w-96 mx-auto my-10 shadow-2xl shadow-purple-600">
       <figure className="h-64">
         <img src={toyImage} />

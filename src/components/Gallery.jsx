@@ -3,6 +3,8 @@
 import React, { useEffect, useState } from "react";
 import { HiShoppingCart } from "react-icons/hi";
 import AOS from "aos";
+import {Link} from  "react-router-dom";
+
 import "aos/dist/aos.css";
 
 const Gallery = () => {
@@ -32,7 +34,7 @@ const Gallery = () => {
   //   console.log(toys);
   return (
     <div className="my-32">
-      <h2 className="primary-title">Trending on this Weak</h2>
+      <h2 className="primary-title">Best Sell on this Weak</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-20 mx-6 md:mx-10">
         {toys &&
@@ -43,15 +45,21 @@ const Gallery = () => {
               data-aos="fade-up"
               ata-aos-duration="800"
             >
-              <div className="w-full mask mask-hexagon  motion">
+              <div className="w-full mask mask-square  motion">
                 <img src={toy.toyImage} />
                 <div className="absolute top-0 overlay-img">
                   <p className="text-purple-700 text-3xl text-center font-bold">
                     {toy.toyName}
                   </p>
-                  <button className="btn  gap-4 bg-purple-900 ">
+
+
+                  <Link to={`/toys/${toy._id}`}>
+                  <button className="btn  bg-purple-900 ">
                     Shop Now <HiShoppingCart className="text-2xl " />
-                  </button>
+              </button>
+            </Link>
+                
+                 
                 </div>
               </div>
             </div>
