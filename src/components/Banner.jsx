@@ -10,11 +10,11 @@ import { HiShoppingCart } from "react-icons/hi";
 
 const Banner = () => {
   const bannerImg = [
-    "https://thumbs.dreamstime.com/b/alarm-clock-puzzles-dominoes-paints-glasses-educational-toys-purple-background-top-view-back-to-school-concept-early-215808874.jpg",
-    "https://5.imimg.com/data5/SELLER/Default/2023/2/SI/BI/VW/157562239/toys-encourage-kids-recognize-letters-numbers-3256226-hmf-v1-5ece9b3064524d17a34bb121ef79e650-500x500.jpg",
-    "https://thumbs.dreamstime.com/b/alarm-clock-puzzles-dominoes-paints-glasses-educational-toys-purple-background-top-view-back-to-school-concept-early-215808874.jpg",
- 
-    "https://thumbs.dreamstime.com/b/kids-toys-frame-purple-background-flat-lay-top-view-empty-center-140850170.jpg"
+    "/bannar-1.webp",
+    "/bannar-2.webp",
+    "/bannar-3.webp",
+    "/bannar-4.webp",
+    "/bannar-5.webp"
   ];
 
   return (
@@ -46,7 +46,7 @@ const Banner = () => {
               <div className=" w-full flex justify-center bg-purple-500  items-cent text-white text-center">
                 <div className="p-10 space-y-16 mt-28 ">
                   <h2 className="text-4xl font-bold   text-p-4 ounded-md">
-                    Welcome to Educational-Toys
+                    Welcome to 3 Educational-Toys
                   </h2>
                   <p className="font-semibold space-y-6">
                     We provide our best service for your kid. Buy your toys and

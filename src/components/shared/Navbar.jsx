@@ -84,7 +84,7 @@ const Navbar = () => {
     } else if (pathname === "/blog") {
       title = "Educational Toys | blog";
     } else if (pathname.includes("/toys/")) {
-      title = "Educational Toys | toy details";
+      title = "Educational Toys |details";
     }
     else if (pathname === "/signin") {
       title = "Educational Toys | login";}
